@@ -1,0 +1,26 @@
+SET NAMES UTF8;
+DROP DATABASE IF EXISTS meituan;
+CREATE DATABASE meituan CHARACTER SET UTF8;
+USE meituan;
+CREATE TABLE food(
+fid INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(32),
+sole INT,
+price DOUBLE(10,2),
+img_sm VARCHAR(90),
+time BIGINT,
+distance VARCHAR(80),
+low_price DOUBLE(10,2)
+);
+INSERT INTO food VALUES(null,'烤鱼',4444,80.85,'1.jpg',12323332334,'2km',8);
+INSERT INTO food VALUES(null,'烤虾',2000,100,'1.jpg',12323332334,'3km',8);
+INSERT INTO food VALUES(null,'烤龙',1800,200,'1.jpg',12323332334,'4km',8);
+INSERT INTO food VALUES(null,'烤鸡',3600,86,'1.jpg',12323332334,'5km',8);
+INSERT INTO food VALUES(null,'烤猪',5900,300,'1.jpg',12323332334,'6km',8);
+INSERT INTO food VALUES(null,'烤牛',1111,45.90,'1.jpg',12323332334,'7km',8);
+INSERT INTO food VALUES(null,'烤虎',6540,70,'1.jpg',12323332334,'8km',8);
+INSERT INTO food VALUES(null,'烤兔',2633,80,'1.jpg',12323332334,'9km',8);
+INSERT INTO food VALUES(null,'烤蛇',3000,321,'1.jpg',12323332334,'12km',8);
+INSERT INTO food VALUES(null,'烤羊',3200,200,'1.jpg',12323332334,'22km',8);
+INSERT INTO food VALUES(null,'烤鸭',1800,87,'1.jpg',12323332334,'32km',8);
+INSERT INTO food VALUES(null,'烤冰',4500,80,'1.jpg',12323332334,'40km',8);
